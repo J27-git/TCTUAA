@@ -1160,7 +1160,8 @@ function viewLogin() {
       <p class="small" style="margin:1rem 0 0"><a href="#/forgot">Forgot your password?</a><br>New here? <a href="#/join">Apply for membership</a></p>
     </form>
 
- <div class="demo-box"><b>Demo accounts</b><p class="small" style="margin:.3rem 0 .6rem">Each role sees only the admin sections it is allowed to use. Select one to fill the form.</p><div class="table-wrap" style="background:transparent;border:0"><table><tbody>${demo.map(([r, e, p]) => `<tr><td>${esc(r)}</td><td class="mono small">${esc(e)}</td><td><button class="btn sm ghost" data-act="demo-fill" data-e="${esc(e)}" data-p="${esc(p)}">Use</button></td></tr>`).join('')}</tbody></table></div><p class="small muted" style="margin:.6rem 0 0">Admin password: Admin#2026. Member password: Member#2026.</p></div>
+ <!-- ============ Demo Account ============ -->
+   <!--<div class="demo-box"><b>Demo accounts</b><p class="small" style="margin:.3rem 0 .6rem">Each role sees only the admin sections it is allowed to use. Select one to fill the form.</p><div class="table-wrap" style="background:transparent;border:0"><table><tbody>${demo.map(([r, e, p]) => `<tr><td>${esc(r)}</td><td class="mono small">${esc(e)}</td><td><button class="btn sm ghost" data-act="demo-fill" data-e="${esc(e)}" data-p="${esc(p)}">Use</button></td></tr>`).join('')}</tbody></table></div><p class="small muted" style="margin:.6rem 0 0">Admin password: Admin#2026. Member password: Member#2026.</p></div> -->
   </div></div>`;
 }
 function viewForgot() {
