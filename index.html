@@ -770,7 +770,7 @@ function footer() {
     <div><h4>Members</h4><ul><li><a href="#/join">Become a member</a></li><li><a href="#/login">Member login</a></li><li><a href="#/verify">Verify a membership</a></li><li><a href="#/directory">Alumni directory</a></li><li><a href="#/events">Events</a></li></ul></div>
     <div><h4>Contact</h4><p>${esc(st.address)}<br><a href="tel:${esc(st.phone.replace(/\s/g, ''))}">${esc(st.phone)}</a><br><a href="mailto:${esc(st.email)}">${esc(st.email)}</a><br><span style="color:#9FB0CC">${esc(st.officeHours)}</span></p></div>
   </div>
-  <div class="foot-bottom"><span>© ${new Date().getFullYear()} ${esc(st.assocName)}, ${esc(st.chapterName)}.</span><span>Working prototype: demo data is stored in this browser only. <button data-act="reset-demo">Reset demo data</button></span></div></div></footer>`;
+  <div class="foot-bottom"><span>© ${new Date().getFullYear()} ${esc(st.assocName)}, ${esc(st.chapterName)}.<!--</span><span>Working prototype: demo data is stored in this browser only. <button data-act="reset-demo">Reset demo data</button></span>--></div></div></footer>`;
 }
 function pageHead(title, lede = '', crumbs = []) {
   return `<div class="page-head"><div class="wrap">${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a>${crumbs.map(([h, l]) => h ? ` / <a href="${h}">${esc(l)}</a>` : ` / <span>${esc(l)}</span>`).join('')}</nav>` : ''}<h1>${esc(title)}</h1>${lede ? `<p class="lede">${esc(lede)}</p>` : ''}</div></div>`;
